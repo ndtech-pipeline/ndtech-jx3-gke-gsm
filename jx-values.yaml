@@ -1,0 +1,87 @@
+jxRequirements:
+  autoUpdate:
+    enabled: false
+    schedule: ""
+  bootConfigURL: https://github.com/jenkins-x/jx3-boot-config
+  buildPacks:
+    buildPackLibrary:
+      gitRef: master
+      gitURL: https://github.com/jenkins-x/jx3-pipeline-catalog.git
+  cluster:
+    clusterName: ndtech-k8s-jenkinsx3
+    environmentGitOwner: todo
+    gitKind: github
+    gitName: github
+    gitServer: https://github.com
+    gke:
+      projectNumber: "643354907207"
+    namespace: jx
+    project: jjh1-289322
+    provider: gke
+    registry: gcr.io
+    zone: us-central1-a
+  environments:
+  - ingress:
+      domain: ""
+      externalDNS: false
+      namespaceSubDomain: ""
+      tls:
+        email: ""
+        enabled: false
+        production: false
+    key: dev
+    owner: ndtech-pipeline
+    repository: ndtech-jx3-gke-gsm
+  - ingress:
+      domain: ""
+      externalDNS: false
+      namespaceSubDomain: ""
+      tls:
+        email: ""
+        enabled: false
+        production: false
+    key: staging
+  - ingress:
+      domain: ""
+      externalDNS: false
+      namespaceSubDomain: ""
+      tls:
+        email: ""
+        enabled: false
+        production: false
+    key: production
+  gitops: true
+  ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: true
+  kaniko: true
+  pipelineUser:
+    username: ndtech-pipeline
+  repository: nexus
+  secretStorage: gsm
+  storage:
+    backup:
+      enabled: false
+      url: ""
+    logs:
+      enabled: true
+      url: gs://logs-ndtech-k8s-jenkinsx3-1c85eff03f85
+    reports:
+      enabled: true
+      url: gs://reports-ndtech-k8s-jenkinsx3-1c85eff03f85
+    repository:
+      enabled: true
+      url: gs://repository-ndtech-k8s-jenkinsx3-1c85eff03f85
+  vault: {}
+  velero:
+    schedule: ""
+    ttl: ""
+  versionStream:
+    ref: master
+    url: https://github.com/jenkins-x/jxr-versions.git
+  webhook: lighthouse
