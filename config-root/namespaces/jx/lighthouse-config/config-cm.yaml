@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         ndtech-pipeline/ndtech-jx3-gke-gsm: true
+        ndtech-pipeline/ndtech-jx3-quickstart-golang: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         ndtech-pipeline/ndtech-jx3-gke-gsm: merge
+        ndtech-pipeline/ndtech-jx3-quickstart-golang: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - ndtech-pipeline/ndtech-jx3-gke-gsm
+        - ndtech-pipeline/ndtech-jx3-quickstart-golang
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - ndtech-pipeline/ndtech-jx3-gke-gsm
+        - ndtech-pipeline/ndtech-jx3-quickstart-golang
       target_url: http://dashboard-jx.35.193.251.233.nip.io
 kind: ConfigMap
 metadata:
