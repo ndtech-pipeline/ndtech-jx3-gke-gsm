@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - ndtech-pipeline/ndtech-jx3-gke-gsm
-      target_url: http://dashboard-jx.
+      target_url: http://dashboard-jx.35.193.251.233.nip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null
