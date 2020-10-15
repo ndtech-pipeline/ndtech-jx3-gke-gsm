@@ -9,6 +9,4 @@ spec:
     providerKind: github
     repositories:
     - name: ndtech-jx3-quickstart-golang
-    - name: ndtech-jx3-quickstart-node
-    - name: ndtech-jx3-quickstart-node2
     scheduler: in-repo
