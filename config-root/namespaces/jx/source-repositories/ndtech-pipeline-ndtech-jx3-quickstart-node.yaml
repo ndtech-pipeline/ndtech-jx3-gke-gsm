@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: ndtech-pipeline
+    provider: github
+    repository: ndtech-jx3-quickstart-node
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: ndtech-pipeline-ndtech-jx3-quickstart-node
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/ndtech-pipeline/ndtech-jx3-quickstart-node.git
+  org: ndtech-pipeline
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: ndtech-jx3-quickstart-node
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/ndtech-pipeline/ndtech-jx3-quickstart-node
